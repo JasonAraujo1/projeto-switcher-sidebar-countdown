@@ -1,8 +1,12 @@
-function openModal() {
-    document.getElementById("modal").style.display = "block";
+
+const button = document.querySelector("#inscrever")
+const modal = document.querySelector("dialog") 
+const buttonFechar = document.querySelector("#fechar")
+
+button.onclick = function () {
+    modal.showModal()
 }
 
-// Função para fechar o modal
-function closeModal() {
-    document.getElementById("modal").style.display = "none";
+buttonFechar.onclick = function (){
+    modal.close()
 }

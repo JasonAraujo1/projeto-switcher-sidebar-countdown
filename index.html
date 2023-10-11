@@ -2,6 +2,9 @@
 <html lang="pt-br">
 <head>
     <!--fonts google-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+      </style>
 
 
     <meta charset="UTF-8">
@@ -33,12 +36,23 @@
 
         <!--ICONS-->
         <div>
-            <a href="#"><img src="" alt=""></a>
-            <a href="#"><img src="" alt=""></a>
-            <a href="#"><img src="" alt=""></a>
-            <a href="#"><img src="" alt=""></a>
-            <a href="#"><img src="" alt=""></a>
-
+            <ul>
+                <li>
+                    <a href="#"><img src="" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="" alt=""></a>
+                </li>  
+                <li>
+                    <a href="#"><img src="" alt=""></a>
+                </li>
+            </ul>
         </div>
         
         <footer>
@@ -49,7 +63,7 @@
 
 
 
-
+    
 
 
 
@@ -61,23 +75,32 @@
 
         <P>Inscreva-se para saber mais sobre o lançamento</P>
 
-        <button class="open-modal-button" onclick="openModal()">Inscreva-se</button>
-        <div id="modal" class="modal">
-            <div class="modal-content">
-                <h2>Formulário de Inscrição</h2>
-                <form>
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required>
+        <button id="inscrever">Insrever-se</button>
+        <dialog>
+                <form id="formModal" action="" method="post"><!-- pode substituir "" do action por uma URL para que os dados sejam enviados para um servidor externo.-->
+                   
+                    <h3>Insira o seu melhor Email</h3>
+                    <fieldset>
+                        <label for="email"></label>
+                        <input id="email" type="email" name="email" placeholder="exemplo@hotmail.com"
+                        required
+                        list="urlsdata"
+                        pattern=".*\.com\.*"
+                        title="Adicione o '.com'!"
+                        spellcheck="true">
 
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
+                    <h3>Nome</h3>
+                        <label for="name"></label>
+                        <input id="name" type="text" name="name" placeholder="Fulano de tal"
+                        required
+                        spellcheck="true">
+                    
 
-                    <button type="submit">Enviar</button>
+                        <button type="submit">Enviar</button>
+                        <button id="fechar">fechar</button>
+                    </fieldset>
                 </form>
-                <button onclick="closeModal()">Fechar</button>
-            </div>
-        </div>
-
+        </dialog>        
    </main>
     
     
