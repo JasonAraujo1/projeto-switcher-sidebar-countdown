@@ -17,6 +17,7 @@ body{
         --roxo: #6C63FF;
         --grey:rgb(238, 236, 236);
         --red:rgb(255, 97, 144);
+        --shadow: 0 0 1em rgb(173, 173, 173);
     }
 
 
@@ -32,14 +33,59 @@ section button{
 
 
 /*MENU LATERAL*/
-nav.menu-lateral{
+nav.menu-lateral{/*bg do menu*/
     position: absolute;
     z-index: 1;
     width: 300px;
     height: 100%;
-    background-color:var(--grey);
-    padding: 40px 0 40px 1%;
+    background-color:white;
+    opacity: 92%;
+    
+    box-shadow: var(--shadow);
+    overflow: hidden;
 }
+
+.btn-expandir{/*div do icon menu*/
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.btn-expandir > i{/*icon menu(esse i é da classe do icon, acionando diretamente o icon)*/
+    color: var(--red);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style: none;
+}
+
+ul li.item-menu a{/*todos os icons*/
+    display: flex;
+
+    color:var(--roxo);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 7%;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+
+ul li.item-menu a .text-link{/*texto dos icons*/
+margin-left: 30px;
+}
+
+
+ul li.item-menu a .icon > i{/*icons*/
+   
+    font-size: 30px;
+}
+
+
+
 
 
 
@@ -70,7 +116,7 @@ main h1{
     padding: 10px;
     color: var(--grey);
     border-radius: 10px ;
-    box-shadow: 0 0 1em rgb(173, 173, 173);
+    box-shadow: var(--shadow);
     margin-top: 20px;
     
 }
@@ -88,7 +134,7 @@ dialog::backdrop{/*fundo atrás do modal ativo*/
 dialog{
     border: none;
     border-radius: .5rem;
-    box-shadow: 0 0 1em rgb(173, 173, 173);
+    box-shadow: var(--shadow);
     margin: auto;
     min-height: 20rem;
     max-width: 100%;
@@ -177,5 +223,14 @@ dialog input{
         transition: 0.3s ease;   
     }
     #inscrever:not(:hover){
+        transition: 0.3s;
+    }
+
+
+    ul li.item-menu a:hover{
+        background-color:var(--grey);
+        transition: 0.2s;
+    }
+    ul li.item-menu a:not(:hover){
         transition: 0.3s;
     }
