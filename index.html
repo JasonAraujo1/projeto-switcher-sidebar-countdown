@@ -6,6 +6,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Oswald:wght@200&display=swap');
       </style>
 
+    <!--icons link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,43 +24,47 @@
 
 
 
-    <aside>
-        <!--switcher/-->
-        <header>
-            <button>switcher</button>  <a href="#"><img src="" alt=""></a>
-        </header>
-        
-        <div>
-            <form action="/pagina-de-resultados.html" method="get">
-                <input type="text" name="q" placeholder="Pesquisar...">
-                <input type="submit" value="Buscar">
+    <nav class="menu-lateral">
+        <div class="btn-expandir">
+            <i class="bi bi-list"></i><!--icon de expanção do menu-->
         </div>
+        <ul>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-rocket"></i></span>
+                    <span class="text-link">Launch</span>
+                </a>
+            </li>
+            
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-columns-gap"></i></i></span>
+                    <span class="text-link">Dashboard</span>
+                </a>
+            </li>
+            
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-calendar3"></i></span>
+                    <span class="text-link">Calendar</span>
+                </a>
+            </li>
 
-        <!--ICONS-->
-        <div>
-            <ul>
-                <li>
-                    <a href="#"><img src="" alt=""></a>
-                </li>
-                <li>
-                    <a href="#"><img src="" alt=""></a>
-                </li>
-                <li>
-                    <a href="#"><img src="" alt=""></a>
-                </li>
-                <li>
-                    <a href="#"><img src="" alt=""></a>
-                </li>  
-                <li>
-                    <a href="#"><img src="" alt=""></a>
-                </li>
-            </ul>
-        </div>
-        
-        <footer>
-            <a href="#"><img src="" alt=""></a>
-        </footer>
-    </aside>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-gear"></i></span>
+                    <span class="text-link">Settings</span>
+                </a>
+            </li>
+
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-person-circle"></i></span>
+                    <span class="text-link">Profile</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
 
 
@@ -75,7 +81,7 @@
 
         <P>Inscreva-se para saber mais sobre o lançamento</P>
 
-        <button id="inscrever">Insrever-se</button>
+        <button id="inscrever">Inscrever-se</button>
         <dialog>
                 <button id="fechar"><img src="./assets/x-fill.svg" alt="close symbol"></button>
                
