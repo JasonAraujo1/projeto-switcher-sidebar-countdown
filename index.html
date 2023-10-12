@@ -3,7 +3,7 @@
 <head>
     <!--fonts google-->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Oswald:wght@200&display=swap');
       </style>
 
 
@@ -77,10 +77,18 @@
 
         <button id="inscrever">Insrever-se</button>
         <dialog>
+                <button id="fechar"><img src="./assets/x-fill.svg" alt="close symbol"></button>
+               
                 <form id="formModal" action="" method="post"><!-- pode substituir "" do action por uma URL para que os dados sejam enviados para um servidor externo.-->
-                   
-                    <h3>Insira o seu melhor Email</h3>
                     <fieldset>
+                        
+                        <h3>Nome</h3>
+                        <label for="name"></label>
+                        <input id="name" type="text" name="name" placeholder="Fulano de tal"
+                        required
+                        spellcheck="true">
+                   
+                        <h3>Insira o seu melhor Email</h3>
                         <label for="email"></label>
                         <input id="email" type="email" name="email" placeholder="exemplo@hotmail.com"
                         required
@@ -89,15 +97,11 @@
                         title="Adicione o '.com'!"
                         spellcheck="true">
 
-                    <h3>Nome</h3>
-                        <label for="name"></label>
-                        <input id="name" type="text" name="name" placeholder="Fulano de tal"
-                        required
-                        spellcheck="true">
+                   
                     
 
-                        <button type="submit">Enviar</button>
-                        <button id="fechar">fechar</button>
+                        <button type="submit"><img src="./assets/paper-plane-tilt-fill.svg" alt="'send' symbol"></button>
+                       
                     </fieldset>
                 </form>
         </dialog>        

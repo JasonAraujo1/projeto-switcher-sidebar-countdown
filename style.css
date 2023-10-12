@@ -15,6 +15,8 @@ body{
         --bg-image:url('./assets/bg-image.svg');
         --bg-image-phone:url('./assets/bg-image-phone.svg');
         --roxo: #6C63FF;
+        --grey:rgb(238, 236, 236);
+        --red:rgb(255, 97, 144);
     }
 
 
@@ -24,7 +26,9 @@ body *{
 
 
        
-    
+section button{
+    cursor: pointer;
+ }   
 
 /*MAIN*/
 main{
@@ -36,15 +40,26 @@ main{
 }
 
 main h1{
-    font-size: 36px;
+    font-size: 106px;
     font-style: normal;
     font-weight: 700;
     color:var(--roxo) ;
+    font-family: 'Oswald', sans-serif;
  }
 
 
 
-
+#inscrever{/*BUTTON inscrever*/
+    border: none;
+    
+    background:var(--red);
+    padding: 10px;
+    color: var(--grey);
+    border-radius: 10px ;
+    box-shadow: 0 0 1em rgb(173, 173, 173);
+    margin-top: 20px;
+    
+}
 
 
 
@@ -66,7 +81,44 @@ dialog{
     width: 40rem;
     padding: 20px;
     
+   
+    flex-direction: column;
+    justify-content: center;
+    
 }
+
+#fechar{
+display: flex;
+
+}
+
+dialog button{/*close button*/
+border: none;
+margin-left: auto;
+background:none;
+padding: 10px;
+
+
+}
+
+dialog fieldset, h3{
+    border: none;
+    padding: 10px 0;
+    color: rgba(47, 0, 255, 0.623);
+    
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+dialog input{
+    border: none;
+    background: var(--grey);
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
 
 
 
@@ -76,14 +128,32 @@ dialog{
         background:var(--bg-image-phone) top center;
         background-size: 100% 100%;
         }
-    main h1 {
+        main h1 {
         text-align: center;
-    color: #f06868;
-    }
+        color: #2e0677e0;
+        font-size: 55px;
+                
+        }
 
       dialog {
         
         padding: 20px;
         max-width: 300px;
       }
+    }
+
+
+
+
+
+    /*HOVER*/
+    dialog button:hover{
+       
+        transform: scale(1.5);   
+        transition: 0.3s;   
+    }
+
+    #inscrever:hover{
+        transform: scale(1.2);   
+        transition: 0.3s;   
     }
