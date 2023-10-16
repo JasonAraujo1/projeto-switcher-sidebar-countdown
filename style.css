@@ -36,18 +36,25 @@ section button{
 nav.menu-lateral{/*bg do menu*/
     position: absolute;
     z-index: 1;
-    width: 300px;
+    width: 60px;
     height: 100%;
     background-color:white;
     opacity: 92%;
     
     box-shadow: var(--shadow);
     overflow: hidden;
+
+    transition: 0.4s;
 }
+
+nav.menu-lateral.expandir{/*menu lateral expandido*/
+    width: 300px;
+}
+
 
 .btn-expandir{/*div do icon menu*/
     width: 100%;
-    padding-left: 20px;
+    padding-left: 15px;
     padding-top: 20px;
 }
 
@@ -71,19 +78,19 @@ ul li.item-menu a{/*todos os icons*/
     padding: 20px 7%;
    
     line-height: 40px;
-
    
 }
 
 
 ul li.item-menu a .text-link{/*texto dos icons*/
-margin-left: 30px;
+    margin-left: 30px;
 }
 
 
 ul li.item-menu a .icon > i{/*icons*/
    
     font-size: 30px;
+    margin-left: 15px;
 }
 
 
@@ -92,9 +99,6 @@ ul li.ativo{
 }
 
 
-nav.menu-lateral.expandir{
-    width: 300px;
-}
 
 
 
@@ -160,7 +164,7 @@ dialog{
    
 }
 
-#fechar{
+#fechar{/*button fechar form*/
 display: flex;
 
 }
@@ -214,25 +218,7 @@ dialog form button{/*Send button*/
 
 
 
-/*dISPLAY PHONE*/
-    @media screen and (max-width:500px) {
-       body{
-        background:var(--bg-image-phone) top center;
-        background-size: 100% 100%;
-        }
-        main h1 {
-        text-align: center;
-        color: #2e0677e0;
-        font-size: 55px;
-                
-        }
 
-      dialog {
-        
-        padding: 20px;
-        max-width: 300px;
-      }
-    }
 
 
 
@@ -277,3 +263,34 @@ dialog form button{/*Send button*/
     ul li.item-menu a:not(:hover){
         transition: 0.3s;
     }
+
+
+
+
+
+
+
+    /*dISPLAY PHONE*/
+    @media screen and (max-width:500px) {
+        body{
+         background:var(--bg-image-phone) top center;
+         background-size: 100% 100%;
+         }
+         main h1 {
+         text-align: center;
+         color: #2e0677e0;
+         font-size: 55px;
+                 
+         }
+ 
+       dialog {
+         
+         padding: 20px;
+         max-width: 300px;
+       }
+
+
+
+    
+    
+     }
