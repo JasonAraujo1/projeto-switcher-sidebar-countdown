@@ -52,6 +52,7 @@ nav.menu-lateral.expandir{/*menu lateral expandido*/
 }
 
 
+
 .btn-expandir{/*div do icon menu*/
     width: 100%;
     padding-left: 15px;
@@ -83,9 +84,15 @@ ul li.item-menu a{/*todos os icons*/
 
 
 ul li.item-menu a .text-link{/*texto dos icons*/
-    margin-left: 30px;
+    margin-left: 70px;
+    transition: 0.5s;
+    opacity: 0;
 }
 
+nav.menu-lateral.expandir .text-link{/*aproximação das letras quando expande o menu*/
+    margin-left: 30px;
+    opacity: 1;
+}/*aqui toda vez que o nav menu lateral tiver a classe expandir eu quero que aconteça algo tom text link*/
 
 ul li.item-menu a .icon > i{/*icons*/
    
@@ -270,21 +277,21 @@ dialog form button{/*Send button*/
 
 
 
-    /*dISPLAY PHONE*/
-    @media screen and (max-width:500px) {
-        body{
+/*dISPLAY PHONE*/
+@media screen and (max-width:500px) {
+    body{
          background:var(--bg-image-phone) top center;
          background-size: 100% 100%;
          
          }
-         main h1 {
+    main h1 {
          text-align: center;
          color: #2e0677e0;
          font-size: 55px;
                  
          }
  
-       dialog {
+    dialog {
          
          padding: 20px;
          max-width: 300px;
@@ -292,15 +299,15 @@ dialog form button{/*Send button*/
 
 
 
-       nav.menu-lateral{
+    nav.menu-lateral{
         height: 50px;
         width:100%;
        }
 
-       nav.menu-lateral.expandirPhone{
+    nav.menu-lateral.expandirPhone{
         height: 100%;
         
-       }
+    }
       
        .btn-expandir{/*div do icon menu*/
         
@@ -309,5 +316,15 @@ dialog form button{/*Send button*/
         padding-bottom: 10px;
     }
     
+    ul li.item-menu a .text-link{/*texto dos icons*/
+        margin-bottom: 50px;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    
+    nav.menu-lateral.expandir .text-link{/*aproximação das letras quando expande o menu*/
+        margin-bottom: 0px;
+        opacity: 1;
+    }
     
      }
