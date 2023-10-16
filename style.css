@@ -275,6 +275,7 @@ dialog form button{/*Send button*/
         body{
          background:var(--bg-image-phone) top center;
          background-size: 100% 100%;
+         
          }
          main h1 {
          text-align: center;
@@ -291,6 +292,22 @@ dialog form button{/*Send button*/
 
 
 
+       nav.menu-lateral{
+        height: 50px;
+        width:100%;
+       }
+
+       nav.menu-lateral.expandirPhone{
+        height: 100%;
+        
+       }
+      
+       .btn-expandir{/*div do icon menu*/
+        
+      
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
     
     
      }
