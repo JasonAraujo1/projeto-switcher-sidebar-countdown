@@ -69,8 +69,10 @@ ul li.item-menu a{/*todos os icons*/
     text-decoration: none;
     font-size: 20px;
     padding: 20px 7%;
-    margin-bottom: 20px;
+   
     line-height: 40px;
+
+   
 }
 
 
@@ -144,7 +146,10 @@ dialog{
    
     flex-direction: column;
     justify-content: center;
-    
+
+
+    position: relative;
+   
 }
 
 #fechar{
@@ -181,6 +186,25 @@ dialog input{
 
 
 
+dialog form button{/*Send button*/
+    position: absolute;
+    gap: 10px;
+    padding: 7px;
+    border: 2px solid var(--grey);
+    border-radius: 20px;
+   
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+    bottom: 0;
+    right: 0;
+
+    margin: 30px;
+
+}
+
+
 
 /*dISPLAY PHONE*/
     @media screen and (max-width:500px) {
@@ -207,19 +231,30 @@ dialog input{
 
 
     /*HOVER*/
-    dialog button:hover{
+    dialog button:hover{/*X button*/
        
         transform: scale(1.5);   
         transition: 0.3s ease;   
     }
-    dialog button:not(:hover){
+    dialog button:not(:hover){/*X button*/
         transition: 0.3s ease;   
     }
 
 
 
+    
+    dialog form button:hover{/*Send button*/
+       
+        transform: scale(1.1);   
+        transition: 0.3s ease;   
+    }
+    dialog form button:not(:hover){/*Send button*/
+        transition: 0.3s ease;   
+    }
+
+
     #inscrever:hover{
-        transform: scale(1.2);   
+        transform: scale(1.1);   
         transition: 0.3s ease;   
     }
     #inscrever:not(:hover){
