@@ -87,6 +87,14 @@ ul li.item-menu a .icon > i{/*icons*/
 }
 
 
+ul li.ativo{
+    background-color: var(--grey);
+}
+
+
+nav.menu-lateral.expandir{
+    width: 300px;
+}
 
 
 
