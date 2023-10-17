@@ -294,6 +294,10 @@ dialog form button{/*Send button*/
          
          }
 
+    .subscribeText{/*p text subscribe*/
+        padding: 10px;
+        text-align: center;
+    }
     
     dialog {
          
