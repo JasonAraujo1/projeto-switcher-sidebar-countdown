@@ -154,7 +154,7 @@ main h1{
 .countdown{
     padding: 90px 0;
     font-size: 50px;
-    text-shadow: var(--shadow);
+   
     display: flex;
     
     gap: 60px;
@@ -163,6 +163,8 @@ main h1{
 }
 
 .time h2{/*numbers clock*/
+    box-shadow: var(--shadow);
+
     background-color: var(--bg-time);
     border-radius: 10px;
     
@@ -172,6 +174,8 @@ main h1{
 
 }
 .time span{/*text clock*/
+    box-shadow: var(--shadow);
+
     font-size: 30px;
     background-color: var(--bg-time);
     border-radius: 5px;
