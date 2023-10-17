@@ -4,11 +4,16 @@
     box-sizing: border-box;
 }
 
+html{
+
+}
+
 body{
     height: 100vh;
     
     background:var(--bg-image) top center;
     background-size: 100% 100%;
+    background-color: var(--bg-color)   ;
     
 }
 
@@ -19,8 +24,17 @@ body{
         --grey:rgb(238, 236, 236);
         --red:rgb(255, 97, 144);
         --shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
-        --bg-time:rgba(7, 7, 7, 0.466);
+        --bg-time:rgba(36, 31, 31, 0.397);
         --text-color:rgb(253, 252, 252);
+        --text-color-black:black;
+        --bg-color:rgb(253, 252, 252);
+    }
+
+    .dark{
+        --bg-color:rgba(12, 12, 12, 0.925);
+        --text-color-black:rgb(255, 255, 255);
+        --roxo:rgba(145, 140, 141, 0.774);
+
     }
 
 
@@ -42,7 +56,7 @@ nav.menu-lateral{/*bg do menu*/
     z-index: 1;
     width: 60px;
     height: 100%;
-    background-color:white;
+    background-color:var(--bg-color);
     opacity: 92%;
     
     box-shadow: var(--shadow);
@@ -184,6 +198,14 @@ main h1{
 }
 
 
+.subscribeText{
+ color: var(--text-color-black);
+
+ background-color:var(--bg-color);
+ border-radius: 5px;
+ padding: 5px;
+}
+
 
 
 /*MODAL FORM */
@@ -200,7 +222,7 @@ dialog{
     max-width: 100%;
     width: 40rem;
     padding: 20px;
-    
+    background-color: var(--bg-color);
    
     flex-direction: column;
     justify-content: center;
@@ -227,7 +249,7 @@ padding: 10px;
 dialog fieldset, h3{
     border: none;
     padding: 10px 0;
-    color: rgba(47, 0, 255, 0.623);
+    color:var(--text-color-black);
     
     justify-content: space-between;
     display: flex;
@@ -321,12 +343,14 @@ dialog form button{/*Send button*/
     body{
          background:var(--bg-image-phone) top center;
          background-size: 100% 100%;
+         background-color: var(--bg-color);
          
          }
     main h1 {
          text-align: center;
-         color: #2e0677e0;
+         color:var(--roxo);
          font-size: 55px;
+         
          
          }
 
