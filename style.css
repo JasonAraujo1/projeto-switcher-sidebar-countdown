@@ -9,6 +9,7 @@ body{
     
     background:var(--bg-image) top center;
     background-size: 100% 100%;
+    
 }
 
     :root{
@@ -18,11 +19,14 @@ body{
         --grey:rgb(238, 236, 236);
         --red:rgb(255, 97, 144);
         --shadow: 0 0 1em rgb(173, 173, 173);
+        --bg-time:rgba(7, 7, 7, 0.466);
+        --text-color:rgb(253, 252, 252);
     }
 
 
 body *{
     font-family: 'Comfortaa', sans-serif;
+    
 }
 
 
@@ -146,6 +150,34 @@ main h1{
 }
 
 
+
+.countdown{
+    padding: 90px 0;
+    font-size: 50px;
+    text-shadow: var(--shadow);
+    display: flex;
+    
+    gap: 60px;
+    text-align: center;
+    
+}
+
+.time h2{/*numbers clock*/
+    background-color: var(--bg-time);
+    border-radius: 10px;
+    
+    padding: 15px;
+    font-family: 'Rajdhani', sans-serif;
+    color: var(--text-color);
+
+}
+.time span{/*text clock*/
+    font-size: 30px;
+    background-color: var(--bg-time);
+    border-radius: 5px;
+    padding: 8px;
+    color: var(--text-color);
+}
 
 
 
@@ -332,6 +364,23 @@ dialog form button{/*Send button*/
         opacity: 1;
     }
 
-    
+
+    .countdown{
+        text-align: center;      
+        font-size: 30px;
+                
+        gap: 10px;
+        padding: 130px 0;
+        
+    }
+    .time span{
+        font-size: 15px;
+        border-radius: 5px;
+        padding: 8px;
+    }
+    .time h2{
+        border-radius: 10px;
+        padding: 5px;
+    }
     
      }
