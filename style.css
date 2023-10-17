@@ -85,7 +85,7 @@ ul li.item-menu a{/*todos os icons*/
 
 ul li.item-menu a .text-link{/*texto dos icons*/
     margin-left: 70px;
-    transition: 0.5s;
+    transition: 0.8s;
     opacity: 0;
 }
 
@@ -97,7 +97,7 @@ nav.menu-lateral.expandir .text-link{/*aproximação das letras quando expande o
 ul li.item-menu a .icon > i{/*icons*/
    
     font-size: 30px;
-    margin-left: 15px;
+    margin-left: 5px;
 }
 
 
@@ -306,6 +306,7 @@ dialog form button{/*Send button*/
 
     nav.menu-lateral.expandirPhone{
         height: 100%;
+        width: 70%;
         
     }
       
@@ -318,7 +319,7 @@ dialog form button{/*Send button*/
     
     ul li.item-menu a .text-link{/*texto dos icons*/
         margin-bottom: 50px;
-        transition: 0.5s;
+        transition: 0.8s;
         opacity: 0;
     }
     
