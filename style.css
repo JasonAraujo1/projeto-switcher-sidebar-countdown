@@ -49,6 +49,7 @@ nav.menu-lateral{/*bg do menu*/
 
 nav.menu-lateral.expandir{/*menu lateral expandido*/
     width: 300px;
+    
 }
 
 
@@ -76,7 +77,7 @@ ul li.item-menu a{/*todos os icons*/
     color:var(--roxo);
     text-decoration: none;
     font-size: 20px;
-    padding: 20px 7%;
+    padding: 20px 1%;
    
     line-height: 40px;
    
@@ -97,8 +98,10 @@ nav.menu-lateral.expandir .text-link{/*aproximação das letras quando expande o
 ul li.item-menu a .icon > i{/*icons*/
    
     font-size: 30px;
-    margin-left: 5px;
+    margin-left: 15px;
 }
+
+
 
 
 ul li.ativo{
@@ -297,8 +300,7 @@ dialog form button{/*Send button*/
          max-width: 300px;
        }
 
-
-
+    /*menu lateral*/
     nav.menu-lateral{
         height: 50px;
         width:100%;
@@ -307,12 +309,9 @@ dialog form button{/*Send button*/
     nav.menu-lateral.expandirPhone{
         height: 100%;
         width: 70%;
-        
     }
       
        .btn-expandir{/*div do icon menu*/
-        
-      
         padding-top: 10px;
         padding-bottom: 10px;
     }
@@ -327,5 +326,7 @@ dialog form button{/*Send button*/
         margin-bottom: 0px;
         opacity: 1;
     }
+
+    
     
      }
