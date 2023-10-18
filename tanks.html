@@ -20,9 +20,9 @@
     <link rel="stylesheet" href="style.css">
     <title>Countdown</title>
 </head>
-<body>
+<body style="background-image: url('assets/thanks-thumb.svg');">
     
-
+    
 <section id="container">
 
     
@@ -94,68 +94,27 @@
    <main>
 
 
-        <h1>READY TO LAUNCH IN...</h1>
+        <h1>THANK YOU FOR SUBSCRIBING!</h1>
 
 
-        <!--COUNTDOWN-->
-        <div id="countdown" class="countdown">
-            <div class="time">
-                <h2 id="days"></h2>
-                <span>Days</span>
-            </div>
-            <div class="time">
-                <h2 id="hours"></h2>
-                <span>Hours</span>
-            </div>
-            <div class="time">
-                <h2 id="minutes"></h2>
-                <span>Min</span>
-            </div>
-            <div class="time">
-                <h2 id="seconds"></h2>
-                <span>Sec</span>
-            </div>
-        </div>
-        
+       
 
 
 
-        <P class="subscribeText">Subscribe to learn more about the launch</P>
+        <P class="subscribeText">You will soon receive a confirmation email.</P>
 
-        <button id="inscrever">Subscribe </button>
 
+    <a href="./index.html">
+        <button id="inscrever" >
+            <i class="bi bi-arrow-left-short"></i>
+            Back
+        </button>
+    </a>
         <!--FORM-->
         
         <dialog>
                 <button id="fechar"><img src="./assets/x-fill.svg" alt="close symbol"></button>
-               
-                <form id="formModal" action="https://formsubmit.co/jasonaraujo123@hotmail.com" method="post"><!-- pode substituir "" do action por uma URL para que os dados sejam enviados para um servidor externo.-->
-                    <fieldset>
-                        
-                        <h3>Name</h3>
-                        <label for="name"></label>
-                        <input id="name" type="text" name="name" placeholder="Example name"
-                        required
-                        spellcheck="true">
-                   
-                        <h3>Enter your best Email.</h3>
-                        <label for="email"></label>
-                        <input id="email" type="email" name="email" placeholder="Example@hotmail.com"
-                        required
-                        list="urlsdata"
-                        pattern=".*\.com\.*"
-                        title="Adicione o '.com'!"
-                        spellcheck="true">
-
-                   
-                    <!--tanks page-->
-                        <input type="hidden" name="_next" value="https://http://127.0.0.1:5500/thanks.html">
-
-                        <button type="submit"><span>Send</span><img src="./assets/paper-plane-tilt-fill.svg" alt="'send' symbol"></button>
-                       
-                    </fieldset>
-                </form>
-        </dialog>        
+        
    </main>
     
     
