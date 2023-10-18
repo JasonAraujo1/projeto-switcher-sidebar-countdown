@@ -31,6 +31,7 @@ body{
         --bg-time:rgba(36, 31, 31, 0.397);
         --switch-bg-url:url(assets/sun.svg);
         --hover-switch:rgba(48, 47, 47, 0.37);
+        --background-switch:rgb(255, 97, 144);;
 
     }
 
@@ -42,6 +43,7 @@ body{
         --bg-time:rgba(255, 255, 255, 0.459);
         --switch-bg-url:url(assets/moon-stars-fill.svg);
         --hover-switch:rgba(255, 255, 255, 0.37);
+        --background-switch: #675ffa;
 
     }
 
@@ -99,11 +101,11 @@ nav.menu-lateral.expandir{/*menu lateral expandido*/
     width: 32px;
     height: 32px;
     
-    color: var(--roxo);
+    color: var(--background-switch);
     border-radius: 50%;
     background: var(--switch-bg-url)no-repeat center;
 
-    background-color:var(--roxo);
+    background-color:var(--background-switch);
 
     top: 50%;
     transform: translateY(-50%);
@@ -118,7 +120,7 @@ nav.menu-lateral.expandir{/*menu lateral expandido*/
     display: block;
     width: 64px;
     height: 24px;
-    background: var(--red);
+    background: var(--background-switch);
     border: 1px solid var(--text-color-black);
     backdrop-filter:blur(4px);
     -webkit-backdrop-filter:blur(4px);
