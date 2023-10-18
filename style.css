@@ -22,7 +22,7 @@ body{
         --bg-image-phone:url('./assets/bg-image-phone.svg');
         --grey:rgb(238, 236, 236);
         --red:rgb(255, 97, 144);
-        --shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+       
 
         --bg-color:rgb(253, 252, 252);
         --text-color-black:black;
@@ -31,8 +31,8 @@ body{
         --bg-time:rgba(36, 31, 31, 0.397);
         --switch-bg-url:url(assets/sun.svg);
         --hover-switch:rgba(175, 173, 173, 0.37);
-        --background-switch:rgb(255, 97, 144);;
-
+        --background-switch:rgb(255, 97, 144);
+        --shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
     }
 
     .dark{
@@ -44,7 +44,7 @@ body{
         --switch-bg-url:url(assets/moon-stars-fill.svg);
         --hover-switch:rgba(255, 255, 255, 0.37);
         --background-switch: #675ffa;
-        --shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.349);
+        --shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.534);
 
     }
 
@@ -436,10 +436,12 @@ dialog form button{/*Send button*/
         }
     }
 
-    #switch button:hover{
+    #switch button:hover{/*circulo ao redor quando o mouse passa(hover)*/
         outline: 5px solid var(--hover-switch);
         transition: 0.1s;
     }
+
+
 
 
 
