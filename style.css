@@ -20,15 +20,18 @@ body{
     :root{
         --bg-image:url('./assets/bg-image.svg');
         --bg-image-phone:url('./assets/bg-image-phone.svg');
-        --roxo: #675ffa;
         --grey:rgb(238, 236, 236);
         --red:rgb(255, 97, 144);
         --shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
-        --bg-time:rgba(36, 31, 31, 0.397);
-        --text-color:rgb(253, 252, 252);
-        --text-color-black:black;
+
         --bg-color:rgb(253, 252, 252);
+        --text-color-black:black;
+        --roxo: #675ffa;
+        --text-color:rgb(253, 252, 252);
+        --bg-time:rgba(36, 31, 31, 0.397);
         --switch-bg-url:url(assets/sun.svg);
+        --hover-switch:rgba(48, 47, 47, 0.37);
+
     }
 
     .dark{
@@ -38,6 +41,7 @@ body{
         --text-color:rgba(0, 0, 0, 0.719);
         --bg-time:rgba(255, 255, 255, 0.459);
         --switch-bg-url:url(assets/moon-stars-fill.svg);
+        --hover-switch:rgba(255, 255, 255, 0.37);
 
     }
 
@@ -119,6 +123,7 @@ nav.menu-lateral.expandir{/*menu lateral expandido*/
     backdrop-filter:blur(4px);
     -webkit-backdrop-filter:blur(4px);
     border-radius: 9999px;
+    opacity: 0.6;
 
     
 
@@ -428,10 +433,14 @@ dialog form button{/*Send button*/
         }
     }
 
+    #switch button:hover{
+        outline: 5px solid var(--hover-switch);
+        transition: 0.1s;
+    }
 
 
 
-/*dISPLAY PHONE*/
+/*DISPLAY PHONE*/
 @media screen and (max-width:500px) {
     body{
          background:var(--bg-image-phone) top center;
