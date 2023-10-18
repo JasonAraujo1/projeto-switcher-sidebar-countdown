@@ -77,8 +77,20 @@ nav.menu-lateral.expandir{/*menu lateral expandido*/
     
 }
 
+#switch{
+    position: relative;
+    width: 64px;
+    
+    
+    margin: 0 20px 10px 20px;
+    
+    
+}
 
 #switch button{/*button switch*/
+    position: absolute;
+    z-index: 1;
+
     border: none;
     width: 32px;
     height: 32px;
@@ -87,19 +99,39 @@ nav.menu-lateral.expandir{/*menu lateral expandido*/
     border-radius: 50%;
     background: var(--switch-bg-url)no-repeat center;
 
-    background-color: #675ffa;
+    background-color:var(--roxo);
+
+    top: 50%;
+    transform: translateY(-50%);
    
+    left: 0;    
+    
+    animation: slideBack 0.2s;
 }
 
-#switch span{
+#switch span{/*spant é por padrão 'inline' então ele não aceita display flex*/
+
+    display: block;
     width: 64px;
     height: 24px;
-    background: var(--bg-time);
+    background: var(--red);
     border: 1px solid var(--text-color-black);
     backdrop-filter:blur(4px);
     -webkit-backdrop-filter:blur(4px);
+    border-radius: 9999px;
+
+    
 
 }
+
+
+.dark #switch button{
+   animation: slideSwitch 0.4s forwards;
+   
+    
+}
+
+
 
 .btn-expandir{/*div do icon menu*/
     width: 100%;
@@ -338,7 +370,7 @@ dialog form button{/*Send button*/
 
 
 
-    /*HOVER*/
+    /*HOVER/ANIMATION*/
     dialog button:hover{/*X button*/
        
         transform: scale(1.5);   
@@ -378,8 +410,23 @@ dialog form button{/*Send button*/
         transition: 0.3s;
     }
 
+    @keyframes slideSwitch{/*movimento do switch no button dark*/
+        from{
+            left: 0;
+        }
+        to{
+            left:50%;
+        }
+    }
 
-
+    @keyframes slideBack{
+        from{
+            left: 50%;
+        }
+        to{
+            left: 0;
+        }
+    }
 
 
 
@@ -457,5 +504,25 @@ dialog form button{/*Send button*/
         border-radius: 10px;
         padding: 5px;
     }
-    
+
+    #switch button{/*button switch*/
+        border: none;
+        width: 22px;
+        height: 22px;
+        
+    }
+
+    #switch span{
+        display: block;
+        width: 44px;
+        height: 18px;
+    }
+    #switch{
+        width: 44px;
+        margin-top: 5px;
+        
+    }
+
+
+
      }

@@ -111,3 +111,12 @@ Esse código é útil para criar contadores regressivos em páginas da web
 para eventos, promoções ou qualquer outra situação em que você deseja exibir
  o tempo restante.
 */
+
+
+
+//SWITCH BUTTON
+function toggleMode() {
+    const html = document.documentElement
+
+        html.classList.toggle('dark')
+    }
