@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 
-html{
 
-}
 
 body{
     height: 100vh;
@@ -220,7 +218,7 @@ main h1{
     font-weight: 700;
     color:var(--roxo) ;
     font-family: 'Oswald', sans-serif;
-    -webkit-text-stroke: 1px #00000056; /* Largura da borda e cor */
+    -webkit-text-stroke: 1px var(--text-color-black); /* Largura da borda e cor */
     
 }
 
@@ -537,6 +535,11 @@ dialog form button{/*Send button*/
         
     }
 
+
+    #switch button:hover{/*circulo ao redor quando o mouse passa(hover)*/
+        outline: none;
+        
+    }
 
 
      }
