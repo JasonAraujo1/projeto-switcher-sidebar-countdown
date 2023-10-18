@@ -30,7 +30,7 @@ body{
         --text-color:rgb(253, 252, 252);
         --bg-time:rgba(36, 31, 31, 0.397);
         --switch-bg-url:url(assets/sun.svg);
-        --hover-switch:rgba(48, 47, 47, 0.37);
+        --hover-switch:rgba(175, 173, 173, 0.37);
         --background-switch:rgb(255, 97, 144);;
 
     }
@@ -44,6 +44,7 @@ body{
         --switch-bg-url:url(assets/moon-stars-fill.svg);
         --hover-switch:rgba(255, 255, 255, 0.37);
         --background-switch: #675ffa;
+        --shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.349);
 
     }
 
@@ -121,7 +122,7 @@ nav.menu-lateral.expandir{/*menu lateral expandido*/
     width: 64px;
     height: 24px;
     background: var(--background-switch);
-    border: 1px solid var(--text-color-black);
+    box-shadow:var(--shadow) ;
     backdrop-filter:blur(4px);
     -webkit-backdrop-filter:blur(4px);
     border-radius: 9999px;
