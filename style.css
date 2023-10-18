@@ -219,7 +219,7 @@ main h1{
     color:var(--roxo) ;
     font-family: 'Oswald', sans-serif;
     -webkit-text-stroke: 1px var(--text-color-black); /* Largura da borda e cor */
-    
+    text-align: center;
 }
 
 
