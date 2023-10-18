@@ -1,4 +1,4 @@
-<h1 align="center">#5 News </h1>
+<h1 align="center">#7 Countdown </h1>
 <h2 align="center">Cadastro de E-mail para Notícias Diárias</h2>
 
 <p align="center">
