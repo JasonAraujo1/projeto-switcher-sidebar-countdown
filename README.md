@@ -40,7 +40,7 @@ O site apresenta uma contagem regressiva e oferece funcionalidades de design com
 
 Você pode visualizar o layout do projeto através [DESSE LINK](<https://jasonaraujo1.github.io/projeto-switcher-sidebar-countdown/>). 
 
-## 📝 Instruções do Site
+## 🔍 Instruções do Site
 
 1. Acesse o [Countdown](<https://jasonaraujo1.github.io/projeto-switcher-sidebar-countdown/>). 
 2. Preencha o formulário de cadastro com seu endereço de e-mail.
