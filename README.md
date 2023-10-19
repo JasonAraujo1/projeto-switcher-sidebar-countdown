@@ -1,8 +1,8 @@
 <h1 align="center">#7 Countdown </h1>
-<h2 align="center">Cadastro de E-mail para Notícias Diárias</h2>
+<h2 align="center">Contagem regressiva</h2>
 
 <p align="center">
-    Mantenha-se informado diariamente com as últimas notícias diretamente na sua caixa de entrada!
+   Site de contagem regressiva: Acompanhe datas importantes.
 </p>
 
 <p align="center">
@@ -33,20 +33,20 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Site de cadastro de E-mail para Notícias Diárias. É uma plataforma que permite aos usuários se cadastrarem para receber "as últimas notícias diretamente" em suas caixas de entrada de e-mail. Através do preenchimento do
-formulário o site redireciona para um capcha de confirmação e o formsubmit.co envia o um texto de resposta automática para o usuário de e-mail cadastrado.
+O site apresenta uma contagem regressiva e oferece funcionalidades de design com modos claro e escuro. Os visitantes podem navegar através de um menu de navegação intuitivo e se manter informados com as últimas atualizações, caso escolham se inscrever em nosso formulário de e-mail. 
 
 
-## 🔖 Layout
+## 🎨 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](<https://jasonaraujo1.github.io/projeto-news/>). 
+Você pode visualizar o layout do projeto através [DESSE LINK](<https://jasonaraujo1.github.io/projeto-switcher-sidebar-countdown/>). 
 
-## 📝 Instruções de Cadastro
+## 📝 Instruções do Site
 
-1. Acesse o [News](<https://jasonaraujo1.github.io/projeto-news/>). 
+1. Acesse o [Countdown](<https://jasonaraujo1.github.io/projeto-switcher-sidebar-countdown/>). 
 2. Preencha o formulário de cadastro com seu endereço de e-mail.
-3. Clique no icon de enviar(seta).
-4. Verifique sua caixa de entrada de e-mail para confirmar a inscrição.
+3. Clique no icon de enviar.
+4. Confirme o CAPCHA e espere a tela de confirmação.
+
 
 Após a confirmação, você começará a receber notícias diárias em seu e-mail!
 
